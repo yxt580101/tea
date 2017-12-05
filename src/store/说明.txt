@@ -1,0 +1,5 @@
+项目的状态管理文件夹
+ state.js      vuex状态文件
+ mutations.js  vuex mutation
+ actions.js    vuex action
+ index.js      主要文件

@@ -1,0 +1,26 @@
+@mixin singleLineCenter($value) {
+  height: $value;
+  line-height: $value;
+}
+
+@mixin bgSize($url) {
+  background-image: url($url);
+  width: width($url);
+  height: height($url);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+//制作一个圆
+@mixin circle($num) {
+  width: px2rem($num);
+  height: px2rem($num);
+  border-radius: 50%;
+}
+
+@mixin hoverImage($key) {
+  @include bgSize($key+'-hover.png');
+}
+
+@mixin staticImage($key) {
+  @include bgSize($key+'-static.png');
+}
